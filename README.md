@@ -16,7 +16,6 @@
 - Webpack.
 - JavaScript.
 - Linters.
-
 ## Install
 
 - Install node.js from [HERE](https://nodejs.org/en/).
