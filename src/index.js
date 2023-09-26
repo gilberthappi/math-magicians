@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import React from 'react';
 import './index.css';
 import App from './App';
