@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 - Code editor (Visual studio code, sublime text, notepad++, ...) installed on your computer;
 - At least basic of HTML and CSS.
 
-### Setup ๐??ฐ
+### Setup 
 
 - Click the [me]() and you'll land on the pure repository;
 - click on the green (๐??ข) button with `Code` Inscription;
@@ -41,7 +41,7 @@ To get a local copy up and running follow these simple example steps.
 
 - If you are familiar with git, Run `npm install` to get all dependecies required to run the linters checks, otherwise use the downloaded project on your computer without testing files
 
-### Run test ๐?งช
+### Run test
 
 > Run thes command bellow inside your `git bash` or command line interface..
 
@@ -53,17 +53,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author
 
-๐??ค **Gilbert**
+ **Gilbert**
 
 - GitHub: [@githubhandle](https://github.com/gilberthappi)
 - Twitter: [@twitterhandle](https://twitter.com/dushimimanagil3)
-- Gmail: [Gmail](gdushimimana6@gmail.com)
+- Linkedin: [@linkedin](https://www.linkedin.com/in/dushimimana-gilbert-happi-997b2a262/)
 
 ![happi's GitHub stats](https://github-readme-stats.vercel.app/api?username=gilberthappi&count_private=true&theme=dark&show_icons=true)
 
-๐??ค **Mark yegon**
 
-## ๐??ญ Future Features <a name="future-features"></a>
+
+## Future Features <a name="future-features"></a>
 - [ ] **Sign up online**
 - [ ] **Add Night/Day mode**
 - [ ] **Newsletter Email**
@@ -72,7 +72,7 @@ To get a local copy up and running follow these simple example steps.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## ๐?ค? Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -87,6 +87,6 @@ Give a โญ?๏ธ? if you like this project!
 - Microverse
 - Hat tip to anyone whose code was used.
 
-## ๐??? License
+##  License
 
 This project is [MIT](./MIT.md) licensed.
