@@ -1,4 +1,7 @@
+// Calculator.js
 import React from 'react';
+import calculate from '../logic/calculate';
+import Button from './Button'; // Assuming Button.js is in the same directory as Calculator.js
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -6,30 +9,42 @@ class Calculator extends React.Component {
     this.state = {};
   }
 
+  clickHandler = (e) => {
+    const result = calculate(this.state, e.target.textContent);
+    this.setState(result);
+  }
+
   render() {
+    const { total, next, operation } = this.state;
+
     return (
       <div className="container">
-        <div className="output">0</div>
+        <div className="output" id="output">
+          {total && total}
+          {operation && operation}
+          {next && next}
+        </div>
         <div className="calculatorBtns">
-          <button className="acBtn gray" type="button">AC</button>
-          <button className="plusMinusBtn gray" type="button">+/-</button>
-          <button className="PercentageBtn gray" type="button">%</button>
-          <button className="operatorBtn" type="button">+</button>
-          <button className="digitBtn" type="button">7</button>
-          <button className="digitBtn" type="button">8</button>
-          <button className="digitBtn" type="button">9</button>
-          <button className="operatorBtn" type="button">x</button>
-          <button className="digitBtn" type="button">4</button>
-          <button className="digitBtn" type="button">5</button>
-          <button className="digitBtn" type="button">6</button>
-          <button className="operatorBtn" type="button">-</button>
-          <button className="digitBtn" type="button">1</button>
-          <button className="digitBtn" type="button">2</button>
-          <button className="digitBtn" type="button">3</button>
-          <button className="operatorBtn" type="button">+</button>
-          <button className="digitBtn span2" type="button">0</button>
-          <button className="digitBtn" type="button">.</button>
-          <button className="evaluationBtn" type="button">=</button>
+          {/* Use the Button component for each button */}
+          <Button className="acBtn gray" label="AC" onClick={this.clickHandler} />
+          <Button className="plusMinusBtn gray" label="+/-" onClick={this.clickHandler} />
+          <Button className="PercentageBtn gray" label="%" onClick={this.clickHandler} />
+          <Button className="operatorBtn" label="÷" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="7" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="8" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="9" onClick={this.clickHandler} />
+          <Button className="operatorBtn" label="x" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="4" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="5" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="6" onClick={this.clickHandler} />
+          <Button className="operatorBtn" label="-" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="1" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="2" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="3" onClick={this.clickHandler} />
+          <Button className="operatorBtn" label="+" onClick={this.clickHandler} />
+          <Button className="digitBtn span2" label="0" onClick={this.clickHandler} />
+          <Button className="digitBtn" label="." onClick={this.clickHandler} />
+          <Button className="evaluationBtn" label="=" onClick={this.clickHandler} />
         </div>
       </div>
     );
