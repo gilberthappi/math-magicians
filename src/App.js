@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Home from './components/Home';
 import Calculator from './components/Calculator';
 import Quote from './components/Quote';
-// import Quote from './components/Quote';
 
 const App = () => (
   <div className="App">
@@ -13,6 +12,7 @@ const App = () => (
     <Routes>
       <Route path="Quote" element={<Quote />} />
       <Route path="calculator" element={<Calculator />} />
+      <Route exact path="Home" element={<Home />} />
     </Routes>
   </div>
 );
