@@ -4,4 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #deb887;
 }
