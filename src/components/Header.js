@@ -1,14 +1,19 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
     <div className="logo">
-      <Link to="/Home">Math Magicians</Link>
+      <Link to="/">Math Magicians</Link>
+      {' '}
+      {/* Updated path to '/' */}
     </div>
     <nav className="navbar">
       <ul className="navLinks">
         <li>
-          <Link to="/Home">Home</Link>
+          <Link to="/">Home</Link>
+          {' '}
+          {/* Updated path to '/' */}
         </li>
         <li>|</li>
         <li>
