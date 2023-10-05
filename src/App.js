@@ -1,18 +1,20 @@
 import React from 'react';
 import './App.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Home from './components/Home';
 import Calculator from './components/Calculator';
 import Quote from './components/Quote';
-// import Quote from './components/Quote';
 
 const App = () => (
   <div className="App">
     <Header />
     <Routes>
+      <Route path="/" element={<Home />} />
+      {' '}
+      {/* Updated path to '/' */}
+      <Route path="Calculator" element={<Calculator />} />
       <Route path="Quote" element={<Quote />} />
-      <Route path="calculator" element={<Calculator />} />
     </Routes>
   </div>
 );

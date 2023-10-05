@@ -6,11 +6,10 @@ const Quote = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Define the API URL with the "funny" category
-    const apiUrl = 'https://api.api-ninjas.com/v1/quotes?category=funny';
-
-    // Fetch the quote from the API
-    fetch(apiUrl)
+    fetch('https://api.api-ninjas.com/v1/quotes?category=funny',
+      {
+        headers: { 'X-Api-Key': 'vkwnFBG8qqMMKrgc74EHuQ==5Fewj66r2fKW1KKj' },
+      })
       .then((response) => response.json())
       .then((data) => {
         // Check if the response data is empty
@@ -18,7 +17,7 @@ const Quote = () => {
           setQuote('No funny quote available');
         } else {
           // Extract the quote from the response data
-          const randomQuote = data[0]?.quote || 'I think there is something in the fact that it is hard to be good looking and funny. You have to have an oddball quality people have to sympathise with you to find you funny.';
+          const randomQuote = data[0]?.quote || 'No funny quote available';
           setQuote(randomQuote);
         }
         setLoading(false);

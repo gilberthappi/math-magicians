@@ -1,17 +1,21 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
     <div className="logo">
-      <Link to="/Calculator">Math Magicians</Link>
+      <Link to="/">Math Magicians</Link>
+      {' '}
+      {/* Updated path to '/' */}
     </div>
     <nav className="navbar">
       <ul className="navLinks">
-        {/* <li>
+        <li>
           <Link to="/">Home</Link>
+          {' '}
+          {/* Updated path to '/' */}
         </li>
-        <li>|</li> */}
+        <li>|</li>
         <li>
           <Link to="/Calculator">Calculator</Link>
         </li>
