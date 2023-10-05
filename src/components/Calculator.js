@@ -14,7 +14,7 @@ const Calculator = () => {
   return (
     <div className="container">
       <div className="wraper">
-        <div className="output" id="output">
+        <div className="output" data-testid="output">
           {total && total}
           {operation && operation}
           {next && next}

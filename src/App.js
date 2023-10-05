@@ -11,8 +11,6 @@ const App = () => (
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      {' '}
-      {/* Updated path to '/' */}
       <Route path="Calculator" element={<Calculator />} />
       <Route path="Quote" element={<Quote />} />
     </Routes>

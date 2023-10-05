@@ -1,7 +1,7 @@
+/* eslint-disable react/no-deprecated */
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import './index.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

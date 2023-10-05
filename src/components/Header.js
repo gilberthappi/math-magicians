@@ -5,15 +5,11 @@ const Header = () => (
   <header>
     <div className="logo">
       <Link to="/">Math Magicians</Link>
-      {' '}
-      {/* Updated path to '/' */}
     </div>
     <nav className="navbar">
       <ul className="navLinks">
         <li>
           <Link to="/">Home</Link>
-          {' '}
-          {/* Updated path to '/' */}
         </li>
         <li>|</li>
         <li>
