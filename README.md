@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-(((Coming soon)))
+(((Coming soon!!)))
 
 ## Key Feature
 -calcuator
